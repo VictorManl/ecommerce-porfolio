@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
-
 import './globals.css'
+import type { Metadata } from 'next'
+import { geist, spaceGrotesk } from '@assets/fonts'
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -13,8 +13,12 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en">
-			<body className={`antialiased`}>{children}</body>
+		<html lang="es">
+			<body
+				className={`${geist.variable} ${spaceGrotesk.variable} font-geist bg-background text-foreground-light w-full text-base antialiased`}
+			>
+				{children}
+			</body>
 		</html>
 	)
 }

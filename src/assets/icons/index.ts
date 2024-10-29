@@ -1,0 +1,6 @@
+export { default as Arrow } from './Arrow'
+export { default as ChevronDown } from './ChevronDown'
+export { default as Heart } from './Heart'
+export { default as ShoppingBag } from './ShoppingBag'
+export { default as UserIcon } from './UserIcon'
+export * from './index'

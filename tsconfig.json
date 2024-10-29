@@ -25,7 +25,13 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@core/components/*": [
+        "./src/modules/core/components/index.ts"
+      ],
     }
   },
   "include": [
@@ -33,7 +39,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/modules/core/components/Footer"  ],
   "exclude": [
     "node_modules"
   ]
